@@ -129,9 +129,9 @@ export function ResumeForm({ resumeData, onResumeDataChange }: ResumeFormProps) 
   return (
     <div className="space-y-6">
       {/* Personal Information */}
-      <Card className="shadow-soft">
-        <CardHeader className="bg-gradient-subtle rounded-t-lg">
-          <CardTitle className="text-foreground">Personal Information</CardTitle>
+      <Card className="shadow-large border-border/20 bg-card/80 backdrop-blur-sm">
+        <CardHeader className="bg-gradient-subtle rounded-t-lg border-b border-border/20">
+          <CardTitle className="text-foreground text-lg">Personal Information</CardTitle>
         </CardHeader>
         <CardContent className="p-6 space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -201,9 +201,9 @@ export function ResumeForm({ resumeData, onResumeDataChange }: ResumeFormProps) 
       </Card>
 
       {/* Summary */}
-      <Card className="shadow-soft">
-        <CardHeader className="bg-gradient-subtle rounded-t-lg">
-          <CardTitle className="text-foreground">Professional Summary</CardTitle>
+      <Card className="shadow-large border-border/20 bg-card/80 backdrop-blur-sm">
+        <CardHeader className="bg-gradient-subtle rounded-t-lg border-b border-border/20">
+          <CardTitle className="text-foreground text-lg">Professional Summary</CardTitle>
         </CardHeader>
         <CardContent className="p-6">
           <Textarea
@@ -216,10 +216,10 @@ export function ResumeForm({ resumeData, onResumeDataChange }: ResumeFormProps) 
       </Card>
 
       {/* Education */}
-      <Card className="shadow-soft">
-        <CardHeader className="bg-gradient-subtle rounded-t-lg flex flex-row items-center justify-between">
-          <CardTitle className="text-foreground">Education</CardTitle>
-          <Button onClick={addEducation} variant="gradient" size="sm">
+      <Card className="shadow-large border-border/20 bg-card/80 backdrop-blur-sm">
+        <CardHeader className="bg-gradient-subtle rounded-t-lg flex flex-row items-center justify-between border-b border-border/20">
+          <CardTitle className="text-foreground text-lg">Education</CardTitle>
+          <Button onClick={addEducation} variant="gradient" size="sm" className="shadow-medium">
             <Plus className="w-4 h-4" />
             Add Education
           </Button>

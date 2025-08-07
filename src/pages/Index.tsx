@@ -23,20 +23,24 @@ const Index = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-subtle">
+    <div className="min-h-screen bg-gradient-hero">
       {/* Header */}
-      <header className="bg-gradient-primary text-primary-foreground shadow-large">
-        <div className="container mx-auto px-4 py-6">
+      <header className="bg-gradient-primary shadow-large border-b border-border/20">
+        <div className="container mx-auto px-4 py-8">
           <div className="flex items-center justify-center gap-3">
-            <div className="flex items-center gap-2">
-              <FileText className="w-8 h-8" />
-              <Zap className="w-6 h-6" />
-            </div>
-            <div className="text-center">
-              <h1 className="text-3xl font-bold">Professional Resume Builder</h1>
-              <p className="text-primary-foreground/80">
-                Create beautiful LaTeX resumes and export directly to Overleaf
-              </p>
+            <div className="flex items-center gap-3 text-primary-foreground">
+              <div className="p-2 bg-white/10 rounded-lg backdrop-blur-sm">
+                <FileText className="w-8 h-8" />
+              </div>
+              <div className="flex items-center gap-2">
+                <Zap className="w-6 h-6" />
+                <div className="text-center">
+                  <h1 className="text-4xl font-bold tracking-tight">Professional Resume Builder</h1>
+                  <p className="text-primary-foreground/90 text-lg mt-1">
+                    Create beautiful LaTeX resumes and export directly to Overleaf
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -68,38 +72,38 @@ const Index = () => {
         </div>
 
         {/* Features Section */}
-        <section className="mt-16 bg-card rounded-lg shadow-soft p-8">
-          <h2 className="text-2xl font-bold text-center text-foreground mb-8">
+        <section className="mt-16 bg-card/50 backdrop-blur-sm rounded-xl shadow-large p-8 border border-border/20">
+          <h2 className="text-3xl font-bold text-center text-foreground mb-8">
             Professional Resume Builder Features
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center p-6 bg-gradient-accent rounded-lg">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FileText className="w-6 h-6 text-primary" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-gradient-accent rounded-xl border border-border/20 hover:shadow-medium transition-all duration-300 animate-fade-in">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <FileText className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-semibold text-accent-foreground mb-2">LaTeX Generation</h3>
-              <p className="text-sm text-accent-foreground/80">
+              <h3 className="font-semibold text-accent-foreground mb-3 text-lg">LaTeX Generation</h3>
+              <p className="text-accent-foreground/80 leading-relaxed">
                 Automatically converts your resume data into professional LaTeX format using the moderncv class.
               </p>
             </div>
 
-            <div className="text-center p-6 bg-gradient-accent rounded-lg">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-6 h-6 text-primary" />
+            <div className="text-center p-6 bg-gradient-accent rounded-xl border border-border/20 hover:shadow-medium transition-all duration-300 animate-fade-in">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <Zap className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-semibold text-accent-foreground mb-2">Overleaf Integration</h3>
-              <p className="text-sm text-accent-foreground/80">
+              <h3 className="font-semibold text-accent-foreground mb-3 text-lg">Overleaf Integration</h3>
+              <p className="text-accent-foreground/80 leading-relaxed">
                 One-click export to Overleaf for advanced editing, collaboration, and PDF compilation.
               </p>
             </div>
 
-            <div className="text-center p-6 bg-gradient-accent rounded-lg">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-6 h-6 bg-primary rounded" />
+            <div className="text-center p-6 bg-gradient-accent rounded-xl border border-border/20 hover:shadow-medium transition-all duration-300 animate-fade-in">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-8 h-8 bg-primary rounded-lg" />
               </div>
-              <h3 className="font-semibold text-accent-foreground mb-2">Live Preview</h3>
-              <p className="text-sm text-accent-foreground/80">
+              <h3 className="font-semibold text-accent-foreground mb-3 text-lg">Live Preview</h3>
+              <p className="text-accent-foreground/80 leading-relaxed">
                 See exactly how your resume will look as you build it with our real-time preview feature.
               </p>
             </div>
@@ -107,33 +111,33 @@ const Index = () => {
         </section>
 
         {/* Instructions Section */}
-        <section className="mt-12 bg-muted rounded-lg p-8">
-          <h2 className="text-xl font-bold text-foreground mb-4">How to Use</h2>
-          <div className="space-y-3 text-foreground">
-            <div className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">1</span>
-              <p>Fill out your personal information, education, experience, and skills in the form.</p>
+        <section className="mt-12 bg-card/50 backdrop-blur-sm rounded-xl p-8 border border-border/20">
+          <h2 className="text-2xl font-bold text-foreground mb-6">How to Use</h2>
+          <div className="space-y-4 text-foreground">
+            <div className="flex items-start gap-4 p-4 bg-gradient-accent rounded-lg border border-border/20">
+              <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">1</span>
+              <p className="leading-relaxed">Fill out your personal information, education, experience, and skills in the form.</p>
             </div>
-            <div className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">2</span>
-              <p>Watch your resume take shape in the live preview as you add information.</p>
+            <div className="flex items-start gap-4 p-4 bg-gradient-accent rounded-lg border border-border/20">
+              <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">2</span>
+              <p className="leading-relaxed">Watch your resume take shape in the live preview as you add information.</p>
             </div>
-            <div className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">3</span>
-              <p>Click "Open in Overleaf" to export your resume as professional LaTeX code.</p>
+            <div className="flex items-start gap-4 p-4 bg-gradient-accent rounded-lg border border-border/20">
+              <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">3</span>
+              <p className="leading-relaxed">Click "Open in Overleaf" to export your resume as professional LaTeX code.</p>
             </div>
-            <div className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">4</span>
-              <p>Edit further in Overleaf and compile to a beautiful PDF resume.</p>
+            <div className="flex items-start gap-4 p-4 bg-gradient-accent rounded-lg border border-border/20">
+              <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">4</span>
+              <p className="leading-relaxed">Edit further in Overleaf and compile to a beautiful PDF resume.</p>
             </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-card border-t mt-16 py-8">
+      <footer className="bg-card/30 backdrop-blur-sm border-t border-border/20 mt-16 py-8">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p className="mb-2">
+          <p className="mb-2 text-lg font-medium">
             Professional Resume Builder with Overleaf Integration
           </p>
           <p className="text-sm">
@@ -142,7 +146,7 @@ const Index = () => {
               href="https://www.overleaf.com/contact" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-primary hover:underline ml-1"
+              className="text-primary hover:text-primary/80 transition-colors ml-1 underline underline-offset-4"
             >
               Get help with Overleaf
             </a>
